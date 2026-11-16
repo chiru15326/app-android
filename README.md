@@ -29,3 +29,13 @@ Offline Android study planner for the 26-week Senior .NET Full Stack timetable.
 - Reminder delivery uses WorkManager and is not exact-to-the-minute; Android battery optimization can delay it.
 - On Android 13+, grant notification permission when prompted. If denied, reminders will not be visible.
 - This source project has not been compiled or device-tested in this environment. Build and verify it in Android Studio before installing on your Vivo device.
+
+## Build APK without installing Android Studio (GitHub Actions)
+1. Create a GitHub account and a new repository (for example, `MyStudyPlannerAndroid`).
+2. Upload the contents of this project folder to the repository root (not the outer ZIP file).
+3. Open the repository's **Actions** tab and select **Build Android APK**.
+4. Select **Run workflow** if it has not started automatically, then wait for the run to finish successfully.
+5. Open the completed run and download the **MyStudyPlanner-debug-apk** artifact. Extract it to get `app-debug.apk`.
+6. Transfer `app-debug.apk` to the Android phone and install it. Allow installation from the app used to open the APK if Android asks.
+
+This workflow builds a debug APK in GitHub's cloud runner; it does not create a signed Play Store release. Keep the repository private if you do not want the source code public. Do not commit passwords, signing keys, or other secrets.
