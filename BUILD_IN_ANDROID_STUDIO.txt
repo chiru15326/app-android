@@ -1,0 +1,2 @@
+Open this folder in Android Studio. Use the IDE's Gradle sync and Build > Build Bundle(s) / APK(s) > Build APK(s).
+A Gradle wrapper JAR and Android SDK are not included; Android Studio will use/download the required Gradle distribution and SDK components.
